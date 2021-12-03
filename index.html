@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Thomas Curvelo Alan Escarcha Lautaro Gonzalez">
+    <meta name="description" content="informacion sobre proyecto escolar 'Smart Pillbox'">
+    <meta name="keywords" content="pastillero inteligente, colegio san josé, proyecto escolar, arduino">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <title>Home</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c0f1186d04.js" crossorigin="anonymous"></script>
+
+    <!-- EMAIL -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_AsVicKkkQPCGbSANKPkCj");
+        })();
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/componentes.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <link rel="stylesheet" href="./styles/team.css">
+</head>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="./images/Logo de AutoAssit.png" class="about__picture">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#institucion">Institucion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyecto">Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section class="home">
+        <article class="home-title row m-auto">
+            <div class="home-title__title-left col d-flex flex-column pe-5 justify-content-center">
+                <h1 class="my-0 fw-bolder title-left__main-title">Auto Assist</h1>
+                <h2 class="mb-2 title-left__secondary-title">Un <strong>control de asistencia automatizado</strong></h2>
+                <a href="#proyecto" class="rounded-pill button text-light">Comenzar</a>
+            </div>
+
+            <div class="home-title__title-right col d-flex justify-content-center">
+                <img src="./images/undraw_modern_design_v3wv.svg" class="title-right__image"
+                    alt="app mobile illustration">
+            </div>
+        </article>
+        <!-- BACKGROUND CIRCLES -->
+        <div class="figure figure--home-top-right"></div>
+        <div class="figure figure--home-mid-left"></div>
+    </section>
+
+    <!-- Institution section -->
+    <section class="institution-container w-100 position-relative" id="institucion">
+        <h3 class="institution-container__title fw-bold text-center mb-4">Institución</h3>
+        <article class="
+        institution-container__institution-description-container 
+        institution-card">
+            <h5
+                class="institution-description-container__school-name description-text text-bolder text-left text-light">
+                Colegio Salesiano San José</h5>
+            <p class="institution-description-container__school-description description-text">La <b>Casa Salesiana San
+                    José</b> ofrece espacios formativos destinados a la
+                educación de los jóvenes en los niveles inicial, primario,
+                secundario técnico y terciario. Además complementan la propuesta
+                cursos de formación laboral, actividades pastorales, y de extensión a la comunidad.</p>
+            <a href="https://sanjoserosario.com.ar/" target="_blank"
+                class="institution-description-container__web-link position-absolute">
+                <img src="./images/Institution/webIcon.svg" alt="web icon">
+            </a>
+        </article>
+        <article class="institution-container__schools-cards-container my-5 mx-auto gap-3">
+            <div class="schools-cards-container__card d-flex justify-content-center align-items-center">
+                <a target="_blank" href="https://sanjoserosario.com.ar/escuela/primaria/"
+                    class="text-center text-light col text-decoration-none">Primaria 1012</a>
+            </div>
+            <div class="schools-cards-container__card d-flex justify-content-center align-items-center">
+                <a target="_blank" href="https://sanjoserosario.com.ar/escuela/secundaria/"
+                    class="text-center text-light col text-decoration-none">Secundaria 2043</a>
+            </div>
+            <div class="schools-cards-container__card d-flex justify-content-center align-items-center">
+                <a target="_blank" href="https://sanjoserosario.com.ar/escuela/secundaria/"
+                    class="text-center text-light col text-decoration-none">Secundaria 8013</a>
+            </div>
+            <div class="schools-cards-container__card d-flex justify-content-center align-items-center">
+                <a target="_blank" href="https://sanjoserosario.com.ar/escuela/nivel-superior/"
+                    class="text-center text-light col text-decoration-none">Instituto 9232</a>
+            </div>
+        </article>
+        <div class="figure figure--institution-mid-left"></div>
+    </section>
+    <!-- <img src="./images/waves/wave1.svg" alt="wave 1" class="waves"> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./scripts/animations.js"></script>
+    <!-- PROYECTO -->
+    <section class="team-container w-100 px-3 mb-5" id="team">
+        <div class="container text-center text-md-start mt-5 proyecto">
+            <article class="team-container__members">
+                <div class="members__title text-center mb-5">
+                    <h3 id="proyecto">Proyecto</h3>
+                </div>
+                <center>
+                    <p style="font-size:1.2rem;">El proyecto trata de un control de asistencia automatizado, el cual
+                        funciona
+                        junto con una
+                        pagina web.
+                        El proyecto se basa en la creacion de un sistema de control de asistencia atumatizado,
+                        controlado por
+                        tarjetas Rfid y Arduino, con una base de datos cargada en una pagina web, donde se podra
+                        ingresar a ver los
+                        registros cuando se lo desee.<br><br>
+                        El objetivo principal es agilizar el proceso del control de presencialidad ayudando así a los
+                        profesores a
+                        tener un registro de asistencia cargado en una aplicación web y así ayudar a saber que alumnos
+                        estuvieron
+                        presentes ese día. <br>
+                        Como objetivo secundario, Tener control de que alumnos pasaron por tal salon en tal momento,
+                        tambien poder
+                        conocer la entrada del personal del colegio diferenciando la entrada a la escuela y a los
+                        salones.
+                    </p>
+                    <img src="./images/acceso.jpg" class="about__picture">
+                </center>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- COMPONENTES -->
+    <section class="team-container w-100 px-3 mb-5" id="team">
+        <div class="container text-center text-md-start mt-5 proyecto">
+            <article class="team-container__members">
+                <div class="members__title text-center mb-5">
+                    <h3>Componentes</h3>
+                </div>
+                <div class="projects__grid">
+                    <article class="projects__items">
+                        <img src="./images/img1.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">
+                                <a
+                                    onclick="window.location.href='https://www.austral3d.com.ar/productos/item/1024/Arduino-Uno-R3-Cable-Usb-Domotica-Robotica-Atmel'">Arduino
+                                    Uno</a>
+                            </h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+
+                        </div>
+                    </article>
+
+                    <article class="projects__items">
+                        <img src="./images/img2.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">
+                                <a
+                                    onclick="window.location.href='https://www.austral3d.com.ar/productos/item/1553/Display-Lcd-1602-16x2-Azul-Hd44780-Con-I2c-SoldadoArduino'">Display
+                                    Lcd 1602 16x2</a>
+                            </h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="projects__items">
+                        <img src="./images/img4.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">
+                                <a
+                                    onclick="window.location.href='https://www.austral3d.com.ar/productos/item/1002/10-Leds-Rgb-5mm-Anodo-Comun-4-Patas-Alto-Brillo-Led'">Leds
+                                    Rgb</a>
+                            </h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="projects__items">
+                        <img src="./images/img3.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">
+                                <a
+                                    onclick="window.location.href='https://www.austral3d.com.ar/productos/item/1751/Modulo-Wifi-Esp8266-Esp01s-Arduino'">Modulo
+                                    Wifi Esp8266 Esp01s</a>
+                            </h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                </div>
+                </center>
+            </article>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team-container w-100 px-3 mb-5" id="team">
+        <article class="team-container__members">
+            <div class="members__title text-center mb-5">
+                <h3 id="equipo">Equipo de Trabajo</h3>
+            </div>
+            <div class="members__cards-container mt-5">
+                <div class="members__card-members">
+                    <img class="card-members__image" width="400px" src="./images/delpi.png" alt="">
+                    <footer class="card-members__footer">
+                        <div class="footer-left">
+                            <h5 class="card-members__names text-light">Delpino Valentin</h5>
+                            <h6 class="card-members__rols">Desarrollo</h6>
+                        </div>
+                        <div class="footer-right">
+                            <a href="https://www.instagram.com/valendelp1no/"><i
+                                    class="im im-instagram text-light"></i></a>
+                            <a href="https://twitter.com/ValenDelp1no"><i class="im im-twitter text-light"></i></a>
+                        </div>
+                    </footer>
+                </div>
+                <div class="members__card-members">
+                    <img class="card-members__image" width="400px" src="./images/jara.png" alt="">
+                    <footer class="card-members__footer">
+                        <div class="footer-left">
+                            <h5 class="card-members__names text-light">Jara Tomas</h5>
+                            <h6 class="card-members__rols">Desarrollo</h6>
+                        </div>
+                        <div class="footer-right">
+                            <a href="https://www.instagram.com/tomas_jara16/"><i
+                                    class="im im-instagram text-light"></i></a>
+                        </div>
+                    </footer>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-light">
+
+        <!-- CONTACT -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="container text-center text-md-start mt-5 formulario">
+                <form id="form" method="post">
+                    <div class="members__title text-center mb-5">
+                        <h3 id="contacto">Contacto</h3>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="nombre" type="text" class="form-control" id="name" placeholder="Nombre" required>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="correo" type="email" class="form-control" id="email" placeholder="name@example.com"
+                            required>
+                        <label for="correo">Correo Electrónico</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="telefono" type="text" class="form-control" id="phone" placeholder="Teléfono"
+                            required>
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea name="textarea" class="form-control" placeholder="Deja un comentario aqui"
+                            id="message" style="height: 100px; min-height: 100px;" required></textarea>
+                        <label for="textarea">Mensaje</label>
+                    </div>
+                    <button onclick="sendmail()" type="submit"
+                        class="rounded-pill btn button text-light">Enviar</button>
+                </form>
+        </section>
+
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4 text-primary">
+                            Menu
+                        </h6>
+                        <p>
+                            <a href="#institucion" class="text-reset text-decoration-none">Institucion</a>
+                        </p>
+                        <p>
+                            <a href="#proyecto" class="text-reset text-decoration-none">Proyecto</a>
+                        </p>
+                        <p>
+                            <a href="#equipo" class="text-reset text-decoration-none">Equipo</a>
+                        </p>
+                        <p>
+                            <a href="#contacto" class="text-reset text-decoration-none">Contacto</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-4" style="background-color: rgba(107, 114, 242, 0.5);">
+            ©
+            <script>document.write(new Date().getFullYear());</script>
+            <a class="text-reset fw-bold text-decoration-none" href="./">Auto Assist</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="./scripts/animations.js"></script>
+    <script defer src="./scripts/formulario.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b37573907.js" crossorigin="anonymous"></script>
+
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
